@@ -1,8 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
     
+    <CheckBox
+        android:id="@+id/police"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="police" />
 
-</LinearLayout>
+    <CheckBox
+        android:id="@+id/bspp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/police"
+        android:text="BSPP" />
+    
+    <CheckBox
+        android:id="@+id/samu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/bspp"
+        android:text="SAMU" />
+    
+    <CheckBox
+        android:id="@+id/medecin_civil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/samu"
+        android:text="médecin civil" />
+    
+    <CheckBox
+        android:id="@+id/autres_moyens"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/police"
+        android:layout_marginTop="30dp"
+        android:text="autre(s)" />
+
+    <EditText
+        android:id="@+id/edit_autres_moyens"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/autres_moyens"
+        android:layout_alignBottom="@+id/autres_moyens"
+        android:layout_toRightOf="@+id/autres_moyens"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

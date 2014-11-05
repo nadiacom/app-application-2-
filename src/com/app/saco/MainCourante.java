@@ -187,7 +187,61 @@ public class MainCourante extends Activity {
 //    		Intent main= new Intent(this, MainCourante.class);
 //    		startActivity(main);
     		break;
+    		
+    	case 4:
+    		Fragment fragment4 = new BilanComplementaire();
+    		// Insert the fragment by replacing any existing fragment
+    	    FragmentManager fragmentManager4 = getFragmentManager();
+    	    fragmentManager4.beginTransaction()
+    	                   .replace(R.id.content_frame, fragment4)
+    	                   .commit();
+//    		Intent main= new Intent(this, MainCourante.class);
+//    		startActivity(main);
+    		break;
+    		
+    	case 5:
+    		Fragment fragment5 = new GestesEffectues();
+    		// Insert the fragment by replacing any existing fragment
+    	    FragmentManager fragmentManager5 = getFragmentManager();
+    	    fragmentManager5.beginTransaction()
+    	                   .replace(R.id.content_frame, fragment5)
+    	                   .commit();
+//    		Intent main= new Intent(this, MainCourante.class);
+//    		startActivity(main);
+    		break;
     	
+    	case 6:
+    		Fragment fragment6 = new Evolution();
+    		// Insert the fragment by replacing any existing fragment
+    	    FragmentManager fragmentManager6 = getFragmentManager();
+    	    fragmentManager6.beginTransaction()
+    	                   .replace(R.id.content_frame, fragment6)
+    	                   .commit();
+//    		Intent main= new Intent(this, MainCourante.class);
+//    		startActivity(main);
+    		break;
+    		
+    	case 7:
+    		Fragment fragment7 = new MoyensPresents();
+    		// Insert the fragment by replacing any existing fragment
+    	    FragmentManager fragmentManager7 = getFragmentManager();
+    	    fragmentManager7.beginTransaction()
+    	                   .replace(R.id.content_frame, fragment7)
+    	                   .commit();
+//    		Intent main= new Intent(this, MainCourante.class);
+//    		startActivity(main);
+    		break;
+    		
+    	case 8:
+    		Fragment fragment8 = new SuiteDonnee();
+    		// Insert the fragment by replacing any existing fragment
+    	    FragmentManager fragmentManager8 = getFragmentManager();
+    	    fragmentManager8.beginTransaction()
+    	                   .replace(R.id.content_frame, fragment8)
+    	                   .commit();
+//    		Intent main= new Intent(this, MainCourante.class);
+//    		startActivity(main);
+    		break;
     	}
         
 

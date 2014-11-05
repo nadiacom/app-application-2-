@@ -1,8 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-    
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/signes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Signes:" />
+
+    <EditText
+        android:id="@+id/edit_signes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/signes"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/douleur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/edit_signes"
+        android:layout_marginTop="40dp"
+        android:text="Douleur (EVS):" />
+
+    <EditText
+        android:id="@+id/edit_douleur"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/douleur"
+        android:layout_alignBottom="@+id/douleur"
+        android:layout_toRightOf="@+id/douleur"
+        android:ems="10" />
+    
+     <TextView
+        android:id="@+id/douleur_echelle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/douleur"
+        android:layout_alignBottom="@+id/douleur"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/edit_douleur"
+        android:text="/4" />
+     
+     <TextView
+        android:id="@+id/temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/douleur"
+        android:layout_alignBottom="@+id/douleur"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/douleur_echelle"
+        android:text="Température:" />
+     
+    <EditText
+        android:id="@+id/edit_temperature"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/douleur"
+        android:layout_alignBottom="@+id/douleur"
+        android:layout_toRightOf="@+id/temperature"
+        android:ems="10" />
+    
+     <TextView
+        android:id="@+id/temperature_degre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/douleur"
+        android:layout_alignBottom="@+id/douleur"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/edit_temperature"
+        android:text="°C" />
+     
+      <TextView
+        android:id="@+id/glycemie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/douleur"
+        android:layout_alignBottom="@+id/douleur"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/temperature_degre"
+        android:text="Glycémie:" />
+     
+    <EditText
+        android:id="@+id/edit_glycemie"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/douleur"
+        android:layout_alignBottom="@+id/douleur"
+        android:layout_toRightOf="@+id/glycemie"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/antecedents_allergies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/douleur"
+        android:layout_marginTop="40dp"
+        android:text="Antécédents/Alergies:" />
+    
+    <EditText
+        android:id="@+id/edit_antecedents_allergies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/antecedents_allergies"
+        android:layout_alignBottom="@+id/antecedents_allergies"
+        android:layout_toRightOf="@+id/antecedents_allergies"
+        android:ems="10" />
+    
+     <TextView
+        android:id="@+id/traitement_hospitalisation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/antecedents_allergies"
+        android:layout_marginTop="40dp"
+        android:text="Traitements/Hospitalisation::" />
+    
+    <EditText
+        android:id="@+id/edit_traitement_hospitalisation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/traitement_hospitalisation"
+        android:layout_alignBottom="@+id/traitement_hospitalisation"
+        android:layout_toRightOf="@+id/traitement_hospitalisation"
+        android:ems="10" />
+
+</RelativeLayout>

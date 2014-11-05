@@ -1,8 +1,207 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-    
 
-</LinearLayout>
+    <CheckBox
+        android:id="@+id/assis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="assis" />
+
+    <CheckBox
+        android:id="@+id/demi_assis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/assis"
+        android:text="1/2 assis" />
+    
+    <CheckBox
+        android:id="@+id/allonge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/demi_assis"
+        android:text="allongé" />
+    
+    <CheckBox
+        android:id="@+id/pls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/allonge"
+        android:text="PLS" />
+
+    <CheckBox
+        android:id="@+id/aspiration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/assis"
+        android:layout_marginTop="30dp"
+        android:text="aspiration" />
+    
+    <CheckBox
+        android:id="@+id/inhalation_o2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/aspiration"
+        android:text="Inhalation O2 (" />
+
+    <EditText
+        android:id="@+id/edit_inhalation_o2"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/aspiration"
+        android:layout_toRightOf="@+id/aspiration"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/inhalation_o2_unite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edit_inhalation_o2"
+        android:layout_toRightOf="@+id/edit_inhalation_o2"
+        android:text="L/min)" />
+
+    <CheckBox
+        android:id="@+id/va_o2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/inhalation_o2_unite"
+        android:layout_alignBottom="@+id/inhalation_o2_unite"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/inhalation_o2_unite"
+        android:text="VA + O2" />
+
+      
+      <CheckBox
+        android:id="@+id/rcp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/va_o2"
+        android:layout_alignBottom="@+id/va_o2"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/va_o2"
+        android:text="RCP" />
+      
+            <CheckBox
+        android:id="@+id/dsa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rcp"
+        android:layout_alignBottom="@+id/rcp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/rcp"
+        android:text="DSA (" />
+       
+       <EditText
+        android:id="@+id/edit_dsa"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/dsa"
+        android:layout_alignBottom="@+id/dsa"
+        android:layout_toRightOf="@+id/dsa"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/dsa_unite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edit_dsa"
+        android:layout_alignBottom="@+id/edit_dsa"
+        android:layout_toRightOf="@+id/edit_dsa"
+        android:text="chocs délivrés)" />
+ 
+     <CheckBox
+        android:id="@+id/collier_cervical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/aspiration"
+        android:layout_marginTop="30dp"
+        android:text="collier cervical" />
+    
+    <CheckBox
+        android:id="@+id/attelle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/collier_cervical"
+        android:layout_alignBottom="@+id/collier_cervical"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/collier_cervical"
+        android:text="attelle" />
+    
+    <CheckBox
+        android:id="@+id/echarpe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/attelle"
+        android:layout_alignBottom="@+id/attelle"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/attelle"
+        android:text="écharpe" />
+    
+    <CheckBox
+        android:id="@+id/matelas_depression"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/echarpe"
+        android:layout_alignBottom="@+id/echarpe"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/echarpe"
+        android:text="matelas à dépression" />
+    
+     <CheckBox
+        android:id="@+id/plan_dur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/collier_cervical"
+        android:layout_marginTop="15dp"
+        android:text="plan dur" />
+     
+     <CheckBox
+        android:id="@+id/act"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/plan_dur"
+        android:layout_alignBottom="@+id/plan_dur"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/plan_dur"
+        android:text="ACT" />
+    
+      <CheckBox
+        android:id="@+id/autres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/plan_dur"
+        android:layout_marginTop="30dp"
+        android:text="autre(s):" />
+
+      <EditText
+          android:id="@+id/edit_autres"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBaseline="@+id/autres"
+          android:layout_alignBottom="@+id/autres"
+          android:layout_toRightOf="@+id/autres"
+          android:ems="10" />
+  
+</RelativeLayout>
