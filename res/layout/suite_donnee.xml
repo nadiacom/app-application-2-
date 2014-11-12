@@ -15,7 +15,7 @@
     
     <EditText
         android:id="@+id/edit_bilan_transmis_pc_heure"
-        android:layout_width="30dp"
+        android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/bilan_transmis_pc"
@@ -35,7 +35,7 @@
     
      <EditText
         android:id="@+id/edit_bilan_transmis_pc_min"
-        android:layout_width="30dp"
+        android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/bilan_transmis_pc_heure"
@@ -52,9 +52,10 @@
        
        <EditText
         android:id="@+id/edit_bilan_transmis_samu_heure"
-        android:layout_width="30dp"
+        android:layout_width="50dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/bilan_transmis_samu"
+        android:layout_alignBaseline="@+id/bilan_transmis_samu"
         android:layout_toRightOf="@+id/bilan_transmis_samu"
         android:ems="10" >
          
@@ -66,14 +67,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/bilan_transmis_samu"
+        android:layout_alignBaseline="@+id/bilan_transmis_samu"
         android:layout_toRightOf="@+id/edit_bilan_transmis_samu_heure"
         android:text="h" />
     
      <EditText
         android:id="@+id/edit_bilan_transmis_samu_min"
-        android:layout_width="30dp"
+        android:layout_width="50dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/bilan_transmis_samu"
+        android:layout_alignBaseline="@+id/bilan_transmis_samu"
         android:layout_toRightOf="@+id/bilan_transmis_samu_heure"
         android:ems="10" />
      
@@ -89,9 +92,10 @@
        
        <EditText
         android:id="@+id/edit_bilan_transmis_psa_heure"
-        android:layout_width="30dp"
+        android:layout_width="50dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/bilan_transmis_psa"
+        android:layout_alignBaseline="@+id/bilan_transmis_psa"
         android:layout_toRightOf="@+id/bilan_transmis_psa"
         android:ems="10" >
          
@@ -108,17 +112,19 @@
     
      <EditText
         android:id="@+id/edit_bilan_transmis_psa_min"
-        android:layout_width="30dp"
+        android:layout_width="50dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/bilan_transmis_psa"
+        android:layout_alignBaseline="@+id/bilan_transmis_psa"
         android:layout_toRightOf="@+id/bilan_transmis_psa_heure"
         android:ems="10" />
        
        <EditText
         android:id="@+id/edit_bilan_transmis_pam_heure"
-        android:layout_width="30dp"
+        android:layout_width="50dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/bilan_transmis_pam"
+        android:layout_alignBaseline="@+id/bilan_transmis_pam"
         android:layout_toRightOf="@+id/bilan_transmis_pam"
         android:ems="10" >
          
@@ -135,9 +141,10 @@
     
      <EditText
         android:id="@+id/edit_bilan_transmis_pam_min"
-        android:layout_width="30dp"
+        android:layout_width="50dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/bilan_transmis_pam"
+        android:layout_alignBaseline="@+id/bilan_transmis_pam"
         android:layout_toRightOf="@+id/bilan_transmis_pam_heure"
         android:ems="10" />
 
@@ -161,9 +168,10 @@
        
        <EditText
         android:id="@+id/edit_medicalisation_heure"
-        android:layout_width="30dp"
+        android:layout_width="50dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/medicalisation"
+        android:layout_alignBaseline="@+id/medicalisation"
         android:layout_toRightOf="@+id/medicalisation"
         android:ems="10" >
          
@@ -180,9 +188,10 @@
     
      <EditText
         android:id="@+id/edit_medicalisation_min"
-        android:layout_width="30dp"
+        android:layout_width="50dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/medicalisation"
+        android:layout_alignBaseline="@+id/medicalisation"
         android:layout_toRightOf="@+id/medicalisation_heure"
         android:ems="10" />
        
@@ -197,9 +206,10 @@
      
             <EditText
         android:id="@+id/edit_evacuation_par"
-        android:layout_width="30dp"
+        android:layout_width="170dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+       android:layout_alignBottom="@+id/evacuation"
+        android:layout_alignBaseline="@+id/evacuation"
         android:layout_toRightOf="@+id/evacuation"
         android:ems="10" >
          
@@ -216,9 +226,10 @@
     
      <EditText
         android:id="@+id/edit_evacuation_hopital"
-        android:layout_width="30dp"
+        android:layout_width="170dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+         android:layout_alignBottom="@+id/evacuation"
+        android:layout_alignBaseline="@+id/evacuation"
         android:layout_toRightOf="@+id/evacuation_urgences"
         android:ems="10" />
 
@@ -235,16 +246,19 @@
         android:id="@+id/evacuation_urgences_arrivee"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/evacuation_urgences"
-        android:layout_toRightOf="@+id/edit_evacuation_hopital"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+         android:layout_below="@+id/evacuation"
+         android:layout_marginTop="15dp"
         android:text="(arrivée" />
   
        
      <EditText
         android:id="@+id/edit_evacuation_urgences_arrivee_heure"
-        android:layout_width="30dp"
+        android:layout_width="50dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/evacuation_urgences_arrivee"
+        android:layout_alignBaseline="@+id/evacuation_urgences_arrivee"
         android:layout_toRightOf="@+id/evacuation_urgences_arrivee"
         android:ems="10" />
      
@@ -252,22 +266,33 @@
         android:id="@+id/evacuation_urgences_arrivee_heure"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/evacuation_urgences"
+        android:layout_alignBottom="@+id/evacuation_urgences_arrivee"
         android:layout_toRightOf="@+id/edit_evacuation_urgences_arrivee_heure"
         android:text="h" />
      
       <EditText
         android:id="@+id/edit_evacuation_urgences_arrivee_min"
-        android:layout_width="30dp"
+        android:layout_width="50dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+       android:layout_alignBottom="@+id/evacuation_urgences_arrivee"
+        android:layout_alignBaseline="@+id/evacuation_urgences_arrivee"
         android:layout_toRightOf="@+id/evacuation_urgences_arrivee_heure"
         android:ems="10" />
       
        <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/evacuation_urgences"
+        android:layout_alignBottom="@+id/evacuation_urgences_arrivee"
         android:layout_toRightOf="@+id/edit_evacuation_urgences_arrivee_min"
         android:text=")" />
+
+       <Button
+           android:id="@+id/button1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/edit_evacuation_urgences_arrivee_min"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="50dp"
+           android:text="Valider" />
+
 </RelativeLayout>

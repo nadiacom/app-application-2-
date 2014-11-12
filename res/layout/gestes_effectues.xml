@@ -48,11 +48,13 @@
         android:layout_marginTop="30dp"
         android:text="aspiration" />
     
+    
     <CheckBox
         android:id="@+id/inhalation_o2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_alignBaseline="@+id/aspiration"
+        android:layout_alignBottom="@+id/aspiration"
         android:layout_marginLeft="20dp"
         android:layout_toRightOf="@+id/aspiration"
         android:text="Inhalation O2 (" />
@@ -61,8 +63,9 @@
         android:id="@+id/edit_inhalation_o2"
         android:layout_width="30dp"
         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/aspiration"
         android:layout_alignBottom="@+id/aspiration"
-        android:layout_toRightOf="@+id/aspiration"
+        android:layout_toRightOf="@+id/inhalation_o2"
         android:ems="10" >
 
         <requestFocus />
@@ -80,8 +83,8 @@
         android:id="@+id/va_o2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/inhalation_o2_unite"
-        android:layout_alignBottom="@+id/inhalation_o2_unite"
+        android:layout_alignBaseline="@+id/aspiration"
+        android:layout_alignBottom="@+id/aspiration"
         android:layout_marginLeft="20dp"
         android:layout_toRightOf="@+id/inhalation_o2_unite"
         android:text="VA + O2" />
@@ -96,16 +99,6 @@
         android:layout_marginLeft="20dp"
         android:layout_toRightOf="@+id/va_o2"
         android:text="RCP" />
-      
-            <CheckBox
-        android:id="@+id/dsa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/rcp"
-        android:layout_alignBottom="@+id/rcp"
-        android:layout_marginLeft="20dp"
-        android:layout_toRightOf="@+id/rcp"
-        android:text="DSA (" />
        
        <EditText
         android:id="@+id/edit_dsa"
@@ -197,11 +190,28 @@
 
       <EditText
           android:id="@+id/edit_autres"
-          android:layout_width="wrap_content"
+          android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:layout_alignBaseline="@+id/autres"
           android:layout_alignBottom="@+id/autres"
           android:layout_toRightOf="@+id/autres"
           android:ems="10" />
+
+      <CheckBox
+          android:id="@+id/dsa"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_below="@+id/va_o2"
+          android:text="DSA (" />
+
+      <Button
+          android:id="@+id/button1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/edit_autres"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="50dp"
+          android:text="Valider" />
   
 </RelativeLayout>
